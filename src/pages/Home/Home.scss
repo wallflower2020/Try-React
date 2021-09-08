@@ -1,0 +1,18 @@
+.home{
+    background-image: url("../../assets/images/wallhaven-gjd3rd.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .head{
+        background-image: url("../../assets/images/wallhaven-nz627o.png");
+        height: 180px;
+        width: 100%;
+    }
+    .body{
+        background-color: #FFFFFF;
+        width: 60%;
+        height: 800px;
+    }
+}

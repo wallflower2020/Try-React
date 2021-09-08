@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .goHome{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: #FFB4CC;
+        margin-right: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: hzgb;
+        font-weight: 600;
+    }
+    .goDetail{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: #FFD980;
+        margin-right: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: hzgb;
+        font-weight: 600;
+    }
+    .goLogin{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: #A0E484;
+        margin-right: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: hzgb;
+        font-weight: 600;
+    }
+    .goCollecte{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: #87D9FF;
+        margin-right: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: hzgb;
+        font-weight: 600;
+    }
+}

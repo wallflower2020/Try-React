@@ -1,24 +1,42 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom'
-//NavLink作为跳转路由标签，如常用的侧边栏跳转高亮效果就可以使用这个标签
+import { withRouter } from 'react-router-dom';
 import './Header.scss'
 
-const selectedStyle = {
-    backgroundColor: 'red',
-    color: 'slategray'
-}
+// const selectedStyle = {
+//     backgroundColor: 'red',
+//     color: 'slategray',
+// }
 
 class Header extends Component {
+    handleOut() {
+        this.props.history.push('./home')
+    }
+    handleOutt() {
+        this.props.history.push('./detail')
+    }
+
+    componentDidMount() {
+        console.log(this.props)
+    }
+
     render () {
         return (
-            <nav>
-                <NavLink to = '/home' activeStyle = { selectedStyle }>首页</NavLink>
-                <NavLink to = '/Detail' activeStyle = { selectedStyle }>详情</NavLink>
-                <NavLink to = '/Login' activeStyle = { selectedStyle }>登录</NavLink>
-                <NavLink to = '/Collecte' activeStyle = { selectedStyle }>收集</NavLink>
-            </nav>
+            <div className="header">
+                <div className="goHome" onClick={this.handleOut.bind(this)}>
+                    首页
+                </div>
+                <div className="goDetail" onClick={this.handleOutt.bind(this)}>
+                    详情
+                </div>
+                <div className="goLogin">
+                    登录
+                </div>
+                <div className="goCollecte">
+                    收集
+                </div>
+            </div>
         )
     }
 }
 
-export default Header
+export default withRouter(Header)
